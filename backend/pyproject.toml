@@ -1,0 +1,20 @@
+[project]
+name = "purchase-management-portal"
+version = "0.1.0"
+description = "Design and implement a web portal with three types of users who can perform different actions related to purchase data entry and report generation."
+authors = [
+    {name = "nullamix",email = "nullamix@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi (>=0.118.3,<0.119.0)",
+    "sqlalchemy (>=2.0.43,<3.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "jwt (>=1.4.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

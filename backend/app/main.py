@@ -1,6 +1,5 @@
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import FastAPI, Depends
-from sqlalchemy.orm import Session
+from fastapi import FastAPI
 from .database import engine, Base, get_db
 from .routers import companies, auth, purchases, products, reports
 from . import crud, models, schemas
