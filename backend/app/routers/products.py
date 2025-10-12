@@ -1,5 +1,3 @@
-# محتوای کامل برای app/routers/products.py
-
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
@@ -30,3 +28,4 @@ router = APIRouter(
 @router.get("/", response_model=List[schemas.Product])
 def read_all_products(db: Session = Depends(get_db)):
     return crud.get_products(db=db)
+
