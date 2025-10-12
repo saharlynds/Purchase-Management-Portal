@@ -8,10 +8,13 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "fastapi (>=0.118.3,<0.119.0)",
+    "fastapi[standard] (>=0.119.0,<0.120.0)",
     "sqlalchemy (>=2.0.43,<3.0.0)",
     "dotenv (>=0.9.9,<0.10.0)",
-    "jwt (>=1.4.0,<2.0.0)"
+    "jwt (>=1.4.0,<2.0.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)",
+    "python-jose (>=3.5.0,<4.0.0)",
+    "passlib (>=1.7.4,<2.0.0)"
 ]
 
 
